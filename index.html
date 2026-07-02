@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Task Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏆 Daily Task Tracker</h1>
+            <div class="streak-info">
+                <div class="streak-display">
+                    <span class="streak-number" id="streakCount">0</span>
+                    <span class="streak-label">Day Streak</span>
+                </div>
+                <div class="last-updated" id="lastUpdated">Last updated: Never</div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Add Task Section -->
+            <section class="add-task-section">
+                <h2>Add Your Activity</h2>
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="taskInput" 
+                        placeholder="What did you do today? (e.g., Completed 2 hours of coding)"
+                        class="task-input"
+                    >
+                    <button id="addTaskBtn" class="btn btn-primary">Add Activity</button>
+                </div>
+                <button id="completeDayBtn" class="btn btn-success btn-complete-day">Complete Today's Tasks</button>
+            </section>
+
+            <!-- Today's Tasks -->
+            <section class="tasks-section">
+                <h2>Today's Activities</h2>
+                <div id="tasksList" class="tasks-list">
+                    <p class="empty-state">No activities added yet. Start by adding your first activity!</p>
+                </div>
+            </section>
+
+            <!-- Calendar View -->
+            <section class="calendar-section">
+                <h2>This Month</h2>
+                <div id="calendar" class="calendar"></div>
+            </section>
+
+            <!-- Statistics -->
+            <section class="stats-section">
+                <h2>Your Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Activities</h3>
+                        <p class="stat-value" id="totalActivities">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>This Week</h3>
+                        <p class="stat-value" id="thisWeek">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>This Month</h3>
+                        <p class="stat-value" id="thisMonth">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Best Streak</h3>
+                        <p class="stat-value" id="bestStreak">0</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
