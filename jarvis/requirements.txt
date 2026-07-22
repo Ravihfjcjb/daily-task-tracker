@@ -1,0 +1,78 @@
+# Core
+Python>=3.12
+
+# GUI
+PySide6==6.7.0
+PySide6-Addons==6.7.0
+
+# Speech
+faster-whisper==0.10.0
+pyttsx3==2.90
+SpeechRecognition==3.10.0
+pyaudio==0.2.13
+noise-suppression-for-voice==0.0.3
+
+# LLM
+Ollama==0.1.0
+openai==1.3.5
+google-generativeai==0.3.0
+langchain==0.1.0
+langchain-community==0.0.10
+langchain-openai==0.0.5
+
+# Voice (Online TTS)
+elevenlabs==0.2.27
+
+# Memory & Search
+FAISS-CPU==1.7.4
+scikit-learn==1.3.2
+sentence-transformers==2.2.2
+
+# Database
+sqlite3  # Built-in
+
+# Vision
+opencv-python==4.8.1.78
+opencv-contrib-python==4.8.1.78
+mediapipe==0.10.0
+pytesseract==0.3.10
+
+# Automation & System
+psutil==5.9.6
+pyautogui==0.9.53
+pyperclip==1.8.2
+requests==2.31.0
+aiohttp==3.9.0
+selenium==4.14.0
+piped-py==0.2.5
+
+# Utilities
+python-dotenv==1.0.0
+pydantic==2.4.2
+dataclasses-json==0.6.0
+aiofiles==23.2.1
+speech-recognition==3.10.0
+Youtube-dl==2021.12.17
+yt-dlp==2023.11.16
+
+# System Utilities
+watchdog==3.0.0
+pillow==10.0.1
+numpy==1.24.3
+pandas==2.0.3
+
+# Development & Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.0
+isort==5.13.0
+pylint==3.0.3
+
+# Logging
+coloredlogs==15.0.1
+
+# Build
+PyInstaller==6.2.0
